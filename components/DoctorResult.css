@@ -1,0 +1,33 @@
+.result
+{
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.row
+{
+    display: flex;
+    
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-7
+{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.strip_list {
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 20px 15px 15px 115px;
+    border-radius: 5px;
+    position: relative;
+    
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.05);
+}

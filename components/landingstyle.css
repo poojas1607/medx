@@ -1,0 +1,38 @@
+.textPart{
+    text-align: center;
+}
+.about-mnnit{
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    margin: auto;
+    
+    
+}
+.home
+{
+    background-image:url("https://www.porterhealth.com/Uploads/public/images/Slideshows/banners-new/heart-risk-assessment-2018.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+.about-mnnit h4 {
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+.about-mnnit hr{
+    border-top: 5px dotted black;
+    width: 50%;
+    margin: auto;
+}
+.about-mnnit p{
+    
+    font-size: 20px;
+    padding: 1em;
+}

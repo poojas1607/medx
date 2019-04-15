@@ -1,0 +1,51 @@
+.home
+{
+    background: url(http://www.ansonika.com/findoctor/img/hero_home_bg_1.svg) center bottom no-repeat #3f4079;;
+    
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+
+.main
+{
+    padding-top: 60px;
+    padding-bottom: 35px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rowBottom
+{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+
+.form-wrapper
+{
+    width: 100%;
+    display: flex;
+    margin-top: 9px;
+    flex-direction: column;
+    
+    
+    margin-bottom: 25px;
+}
+label {
+    font-size: 1.2em;
+    margin-bottom: 0.25em;
+    color: #222;
+    font-weight: lighter;
+  }
