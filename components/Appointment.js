@@ -27,15 +27,19 @@ class Appointment extends React.Component{
         super(props);
     
         this.state = {
-          firstName: null,
-          lastName: null,
+
+          Timing: null,
+          date: null,
           email: null,
-          password: null,
+          Doctor: null,
+          fullname:null,
+          Contact:null,
           formErrors: {
             firstName: "",
             lastName: "",
             email: "",
-            password: ""
+            password: "",
+            fullname: ""
           }
         };
       }
@@ -62,7 +66,7 @@ class Appointment extends React.Component{
         let formErrors = { ...this.state.formErrors };
     
         switch (name) {
-          case "firstName":
+          case "fullname":
             formErrors.firstName =
               value.length < 3 ? "minimum 3 characaters required" : "";
             break;
@@ -90,18 +94,64 @@ class Appointment extends React.Component{
         const { formErrors } = this.state;
     
         return (
-          <div className="wrapper">
-            <div className="form-wrapper">
+          <div className=" container wrapper">
+            <div className="container form-wrapper">
               <h4><strong>Book Your Appointment</strong></h4>
+
               <form onSubmit={this.handleSubmit} noValidate>
-                <div className="firstName">
-                  <label htmlFor="firstName">First Name</label>
+              
+              <div className="email">
+                  <label htmlFor="Full Name">Full Name</label>
                   <input
                     className={formErrors.firstName.length > 0 ? "error" : null}
-                    placeholder="First Name"
-                    type="text"
-                    name="firstName"
+                    placeholder="Full Name"
+                    
+                    name="fullname"
+                    value={this.state.fullname} 
+                    onChange={this.handleChange}
                     noValidate
+                   
+                  />
+                 
+              </div>
+
+                 <div className="email">
+                 <label htmlFor="Doctor Name">Doctor Name</label>
+                        <select className="form-control" name="Doctor" value={this.state.Doctor} onChange={this.handleChange}>
+                            <option value="">Select Doctor</option>
+                            <option value="Dr. ABC">ABC</option>
+                            <option value="Dr. XYZ">XYZ </option>
+                           
+
+                        </select>
+                </div>
+
+                <div className="firstName">
+               <label htmlFor="Registration_Number">Date</label> 
+               <input type="date" name="Date"  value={this.state.Date} 
+                    onChange={this.handleChange} />
+               </div>
+
+               <div className="firstName">
+                <label htmlFor="Registration_Number">Timing</label>
+                        <select className="form-control" name="Timing" value={this.state.Timing} onChange={this.handleChange}>
+                            <option value="">Select Timing</option>
+                            <option value="10:00-12:00 ">10:00-12:00</option>
+                            <option value="17:00-19:00">17:00-19:00 </option>
+                           
+
+                        </select>
+                    </div>
+
+                <div className="firstName">
+                  <label htmlFor="firstName">Contact</label>
+                  <input
+                    className={formErrors.firstName.length > 0 ? "error" : null}
+                    placeholder="Contact"
+                    type="text"
+                    name="Contact"
+                    noValidate
+                    value={this.state.Contact}
                     onChange={this.handleChange}
                   />
                   {formErrors.firstName.length > 0 && (
@@ -109,47 +159,24 @@ class Appointment extends React.Component{
                   )}
                 </div>
                 <div className="lastName">
-                  <label htmlFor="lastName">Last Name</label>
+                  <label htmlFor="lastName">Email Id</label>
                   <input
                     className={formErrors.lastName.length > 0 ? "error" : null}
-                    placeholder="Last Name"
+                    placeholder="Email Id"
                     type="text"
-                    name="lastName"
+                    name="email"
                     noValidate
+                    value={this.state.email}
                     onChange={this.handleChange}
                   />
                   {formErrors.lastName.length > 0 && (
                     <span className="errorMessage">{formErrors.lastName}</span>
                   )}
                 </div>
-                <div className="email">
-                  <label htmlFor="Registration_Number">Registration Number</label>
-                  <input
-                    className={formErrors.email.length > 0 ? "error" : null}
-                    placeholder="Registration Number"
-                    
-                    name="email"
-                    noValidate
-                   
-                  />
-                 
-                </div>
-               <div className="firstName">
-               <label htmlFor="Registration_Number">Date</label> 
-               <input type="date" name="Date" />
-                   </div>
-
-                <div className="email">
-                <label htmlFor="Doctor Name">Doctor Name</label>
-                        <select className="form-control" name="firstName" value={this.state.Doctor} onChange={this.handleChange}>
-                            <option value="">Select Doctor</option>
-                            <option value="Dr. ABC">ABC</option>
-                            <option value="Dr. XYZ">XYZ </option>
-                           
-
-                        </select>
-                    </div>
-                    <div className="email">
+               
+              
+               
+                   {/* <div className="email">
                 <label htmlFor="firstName">Specialization</label>
                         <select className="form-control" name="firstName" value={this.state.Specialization} onChange={this.handleChange}>
                             <option value="">Select Specialization</option>
@@ -158,7 +185,7 @@ class Appointment extends React.Component{
                            
 
                         </select>
-                    </div>
+                    </div>*/}
                     
 
                   
