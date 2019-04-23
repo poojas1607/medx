@@ -1,10 +1,14 @@
 import React from 'react'
 import './Doctor.css'
+
+
+
+
 class Doctor extends React.Component{
 
     constructor(props) {
         super(props);
-    
+            
         this.state = {
           Specialization: null,
           Gender: null,
@@ -83,7 +87,17 @@ class Doctor extends React.Component{
                            
 
                         </select>
-            <p class="text-center"><a href="https://www.youtube.com" class="btn btn-outline-primary btn-lg">Find Doctor</a></p>
+            
+            
+            <p className="btn btn-outline-primary btn-lg">
+                 <a href="/DResult">Find Doctor</a>
+                 </p>
+
+            
+                
+            
+           
+           
             
             </div>
            
