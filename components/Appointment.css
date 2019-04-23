@@ -75,7 +75,7 @@
   
   .firstName,
   .lastName,
-  .email,
+  .email,.fullname
   .password,.Name,.Country {
     display: flex;
     flex-direction: column;
