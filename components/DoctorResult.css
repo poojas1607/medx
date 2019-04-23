@@ -1,33 +1,32 @@
-.result
-{
-    padding-top: 60px;
-    padding-bottom: 35px;
-}
 
-.row
-{
-    display: flex;
-    
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
 
-.col-lg-7
-{
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
 .strip_list {
     margin-bottom: 25px;
     background-color: #fff;
     padding: 20px 15px 15px 115px;
-    border-radius: 5px;
+    border-radius: 12px;
     position: relative;
     
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.05);
+    
+    
+}
+
+
+.strip_list small {
+    color: #999;
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Helvetica,sans-serif;
+    
+    
+}
+
+.strip_list h3{
+    font-size: 1.375rem;
+    display: inline-block;
+    color: #333;
+    font-family: inherit;
+    
 }
