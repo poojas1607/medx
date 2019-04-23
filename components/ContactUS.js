@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import './ContactUS.css';
 
 class ContactUS extends Component {
+    
   render() {
     return (
       <div class="container">
-      <div class="contact-image">
+      {/*<div class="contact-image">
           <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-      </div>
-      <h3 style={{textAlign:'center'}}>Drop Us a Message</h3>
+      </div>*/}
+      <h3 style={{marginLeft:'38%'}}>Drop Us a Message</h3>
       <form method="post">
           
         <div style={{marginLeft:'35%'}} >
