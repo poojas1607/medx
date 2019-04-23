@@ -47,8 +47,8 @@ class Diagnosis extends React.Component{
 
 
         return(
-           <div className="wrapper">
-            <div className="form-wrapper">
+           <div className="conatiner wrapper">
+            <div className="container form-wrapper">
             <h4> Get an Online Diagnosis Here!!</h4>
             <form onSubmit={this.props.getWeather}>
                 
